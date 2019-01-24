@@ -1,0 +1,13 @@
+font-size: 12px; 
+font-weight: 600; // 굵기
+text-transform: uppercase;
+text-decoration: none; // 밑줄
+letter-spacing: .1rem; // 글자 간격
+list-style: none; // 리스트 앞 동그라미
+
+display 속성
+	none: 보이지 않음
+	block: 블록 박스
+	inline: 인라인 박스
+	inline-block: padding, margin, top 사용 가능하고
+			같은 라인에 위치시킬 수도 있음

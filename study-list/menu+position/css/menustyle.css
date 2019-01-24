@@ -1,0 +1,31 @@
+
+            .links > a, li a {
+                font-size: 12px;
+                font-weight: 600;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #636b6f;
+                padding: 0 25px;
+                letter-spacing: .1rem;
+            }
+
+            .menubar li {
+                list-style: none;
+                display: inline-block;
+                position: relative;   
+            }
+
+            .menubar li ul {
+                display: none;
+		padding: 0;
+		text-align: center;
+		/* 가운데 정렬 시 float과 같이 사용 불가 */
+            }
+
+            .menubar li:hover ul {
+                display: block;
+                position: absolute; 
+                top: 25px;
+                left:-10px;
+		line-height: 20px; /* 글자 위아래 간격 */
+            }

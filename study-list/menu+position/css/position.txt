@@ -1,0 +1,14 @@
+position 속성
+	태그를 어떻게 위치시킬 지 정의
+	static: 기본값, 자동으로 배치, 위치를 임의로 설정해줄 수 없다
+	absolute: 절대 좌표와 함께 위치를 지정해줄 수 있다.
+	relative: 원래 있던 위치를 기준으로 좌표 지정
+	fixed
+	inherit
+
+relative인 컨테이너 내부에 absolute인 객체가 있으면 
+절대 좌표를 계산할 때, relative 컨테이너를 기준점으로 잡게 된다.
+
+https://ofcourse.kr/css-course/position-%EC%86%8D%EC%84%B1
+menustyle.css 파일에 
+relative와 absolute 부분과 위 사이트 참고
