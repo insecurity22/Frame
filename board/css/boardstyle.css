@@ -1,0 +1,29 @@
+body {
+	padding: 5px;
+}
+
+table {
+	padding: 8px 0;
+}
+
+.board-list table {
+	border-collapse: collapse;
+}
+
+.board-list th, td {
+	padding: 10px;
+	font-weight: normal;
+	text-align: center;
+	border-bottom: 1px solid #d3d3d3;
+}
+
+.board-list th {
+	background-color: pink;
+}
+
+/* ¼± ¼û±â±â */
+.border-none td {
+	border-right: hidden;
+	border-left: hidden;
+	border-bottom: hidden;
+}

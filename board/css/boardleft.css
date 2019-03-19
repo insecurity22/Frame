@@ -1,0 +1,12 @@
+body {
+	padding: 5px;
+}
+
+table {
+	padding: 8px 0;
+}
+
+.board-left th, td {
+	padding: 4px;
+	text-align: left;
+}
