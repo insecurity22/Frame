@@ -13,8 +13,7 @@
 
 		$id = $_GET[id];
 		$result = mysqli_query($connect, "select * from boards where id=$id");
-		$data = mysqli_fetch_array($result); // data¶ó´Â º¯¼öÀÌ¸§À¸·Î data¸¦ °¡Á®¿È
-
+		$data = mysqli_fetch_array($result);
 		$date = date_create($data[regdate]);
 
 	?>

@@ -3,7 +3,7 @@
 	$connect = dbconn();
 
 	$result = mysqli_query($connect, "select * from boards");
-	$data = mysqli_fetch_array($result); // data¶ó´Â º¯¼öÀÌ¸§À¸·Î data¸¦ °¡Á®¿È
+	$data = mysqli_fetch_array($result); // data라는 변수이름으로 data를 가져옴
 
 	$date = date_create($data[regdate]);
 ?>
