@@ -11,23 +11,23 @@
 		include "db/db.php";
 		$connect = dbconn();
 
-		$id = $_GET['id'];
-		$result = mysqli_query($connect, "select * from board where id=$id");
-		$data = mysqli_fetch_array($result); // data∂Û¥¬ ∫Øºˆ¿Ã∏ß¿∏∑Œ data∏¶ ∞°¡Æø»
+		$id = $_GET[id];
+		$result = mysqli_query($connect, "select * from boards where id=$id");
+		$data = mysqli_fetch_array($result); // data¬∂√≥¬¥√Ç ¬∫¬Ø¬º√∂√Ä√å¬∏¬ß√Ä¬∏¬∑√é data¬∏¬¶ ¬∞¬°√Å¬Æ¬ø√à
 
 		$date = date_create($data[regdate]);
 
 	?>
 
 	<font color="black" size="50">View</font>
-	<form action="edit.php" method="post">
+	<form action="edit.php?id=<?=$id?>" method="post">
 		<table width="100%" border="1">
 			<tr>
-				<td width="60" align="left" size="50">¡¶∏Ò</td>
+				<td width="60" align="left" size="50">Ï†úÎ™©</td>
 				<td align="left"><?=$data[title]?></td>
 			</tr>
 			<tr>
-				<td width="60">µÓ∑œ¿œ</td>
+				<td width="60">Îì±Î°ùÏùº</td>
 				<td align="left"><?=date_format($date, "Y-m-d")?></td>
 			</tr>
 			<tr>
@@ -36,9 +36,9 @@
 
 			<tr class="border-none">
 				<td colspan="2">
-					<input type="submit" value="∏Ò∑œ">
-					<input type="submit" value="ºˆ¡§">
-					<input type="submit" value="ªË¡¶" onclick="window.open('./del.php?id=<?=$id?>')">
+					<input type="button" value="Î™©Î°ù" onclick="window.open('./list.php')">
+					<input type="submit" value="ÏàòÏ†ï">
+					<input type="button" value="ÏÇ≠Ï†ú" onclick="window.open('./del.php?id=<?=$id?>')">
 				</td>
 			</tr>
 		</table>

@@ -8,7 +8,6 @@
 <body class="board-left">
 	<font color="black" size="50">Write</font>
 	<form action="write_post.php" method="post">
-		<input type="hidden" name="id" value="id">
 		<table width="500" border="0">
 			<tr>
 				<td width="60" align="left">Title</td>
@@ -37,9 +36,9 @@
 
 			<tr>
 				<td colspan="2" style="padding-top:10px;">
-					<input type="submit" value="»ý¼ºÇÏ±â">
-					<input type="reset" value="Áö¿ì±â">
-					<input type="button" value="ÀÌÀüÀ¸·Î" onclick="history.back(-1)">
+					<input type="submit" value="ìƒì„±í•˜ê¸°">
+					<input type="reset" value="ì§€ìš°ê¸°">
+					<input type="button" value="ì´ì „ìœ¼ë¡œ" onclick="history.back(-1)">
 				</td>
 			</tr>
 		</table>

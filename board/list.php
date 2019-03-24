@@ -2,8 +2,8 @@
 	include "db/db.php";
 	$connect = dbconn();
 
-	$result = mysqli_query($connect, "select * from board");
-	$data = mysqli_fetch_array($result); // data��� �����̸����� data�� ������
+	$result = mysqli_query($connect, "select * from boards");
+	$data = mysqli_fetch_array($result); // data¶ó´Â º¯¼öÀÌ¸§À¸·Î data¸¦ °¡Á®¿È
 
 	$date = date_create($data[regdate]);
 ?>
@@ -19,11 +19,11 @@
 	<h1>Board list</h1>
 	<table width="100%">
 		<tr>
-			<th width="50">�з�</th>
-			<th width="300">����</th>
-			<th width="80">�۾���</th>
-			<th width="80">��ȸ��</th>
-			<th width="80">�����</th>
+			<th width="50">분류</th>
+			<th width="300">제목</th>
+			<th width="80">글쓴이</th>
+			<th width="80">조회수</th>
+			<th width="80">등록일</th>
 		</tr>
 
 		<tr>
