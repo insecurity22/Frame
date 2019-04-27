@@ -6,7 +6,7 @@
 </head>
 <body>
 	<h2>로그인</h2>
-	<form method="post" action="login_ok_possible_sqlinjection.php">
+	<form method="post" action="login_ok.php">
 		<table width="350px">
 			<tr>
 				<td style="width: 100px">ID</td>
